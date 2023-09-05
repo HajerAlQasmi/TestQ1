@@ -1,0 +1,54 @@
+
+	
+	<style type="text/css">
+		html,
+		body {
+			height: 100%;
+		}
+		
+	</style>
+
+	<!-- top navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #06a82c;">
+		<a class="navbar-brand" href="#" style="color: #090909;">App</a>
+		<!-- hamburger button that toggles the navbar-->
+		<button class="navbar-toggler" type="button"
+			data-toggle="collapse" data-target="#navbarNavAltMarkup"
+			aria-controls="navbarNavAltMarkup" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon">
+			</span>
+		</button>
+		<!-- navbar links -->
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="background-color: #3b80f6;">
+			<div class="navbar-nav" style="background-color:  #3b80f6;">
+				<a class="nav-item nav-link
+					active" href="#"> Home
+				</a>
+				<a class="nav-item nav-link "  href="#" style="color: #120101;  font-style: normal;" routerLink="student">Students</a>
+				<a class="nav-item nav-link" href="#">Contact</a>
+				<a class="nav-item nav-link" href="#">About</a>
+			</div>
+		</div>
+	</nav>
+	<!-- This container contains the sidebar
+			and main content of the page -->
+	<!-- h-100 takes the full height of the body-->
+	<div class="container-fluid h-100">
+		<div class="row h-100">
+			<div class="col-2" id="green">
+				<h4></h4>
+
+				
+			</div>
+			<!--Contains the main content
+					of the webpage-->
+			<div class="col-10" style="text-align: justify;">
+                <br><br>
+                <router-outlet></router-outlet>
+			</div>
+		</div>
+	</div>
+
+
+
